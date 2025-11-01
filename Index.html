@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Conferência Mega-Sena</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Conferência de Jogos - Mega-Sena</h1>
+
+    <section id="sorteio" class="card card-amarelo">
+      <h2>Resultado do Sorteio</h2>
+      <div class="row">
+        <label for="dataSorteio">Data:</label>
+        <input type="date" id="dataSorteio">
+      </div>
+
+      <div class="row">
+        <input type="text" id="resultado" placeholder="Ex: 01, 16, 35, 42, 46, 60">
+      </div>
+    </section>
+
+    <section class="card card-amarelo">
+      <h2>Jogos dos Participantes</h2>
+      <div id="jogos-container"></div>
+
+      <div class="actions">
+        <button id="adicionar-jogo">Adicionar Jogo</button>
+        <button id="salvar-jogos">Salvar Jogos</button>
+        <button id="carregar-jogos">Carregar Jogos</button>
+        <button id="limpar-jogos">Limpar Todos</button>
+      </div>
+      <p class="obs">Máx. 30 jogos — deixe só os que quiser antes de salvar/apurar.</p>
+    </section>
+
+    <div class="actions">
+      <button id="apurar">Apurar Resultado</button>
+    </div>
+
+    <section id="resultado-final" class="card"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
